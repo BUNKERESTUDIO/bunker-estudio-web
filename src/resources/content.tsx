@@ -6,9 +6,9 @@ const person: Person = {
   lastName: "ESTUDIO",
   name: "BUNKER ESTUDIO",
   role: "Ingeniería de Sonido",
-  avatar: "/images/avatar.jpg", // Recuerda: Si no tienes esta foto, saldrá una por defecto
-  email: "info.bunkerestudio@gmail.com", // PON AQUÍ TU EMAIL REAL
-  location: "Beasain/Gipuzkoa",
+  avatar: "/images/avatar.jpg",
+  email: "info.bunkerestudio@gmail.com",
+  location: "Europe/Madrid", // 
   languages: ["Español", "Euskera"],
 };
 
