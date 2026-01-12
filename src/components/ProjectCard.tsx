@@ -35,6 +35,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* 1. Columna de la miniatura (Ancho fijo máximo) */}
       <Flex flex={4} style={{ maxWidth: '200px', minWidth: '150px' }}>
         <Carousel
+          style={{ objectFit: 'contain' }}
           sizes="(max-width: 960px) 100vw, 200px"
           items={images.map((image) => ({
             slide: image,
