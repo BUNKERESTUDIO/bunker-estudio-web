@@ -30,10 +30,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   avatars,
   link,
 }) => {
- return (
+  return (
     <Flex fillWidth gap="l" s={{ direction: "row", alignItems: "flex-start" }}>
-      {/* Contenedor de la miniatura */}
-      <Flex flex={4} style={{ maxWidth: '200px' }}>
+      {/* 1. Columna de la miniatura (Ancho fijo máximo) */}
+      <Flex flex={4} style={{ maxWidth: '200px', minWidth: '150px' }}>
         <Carousel
           sizes="(max-width: 960px) 100vw, 200px"
           items={images.map((image) => ({
@@ -43,29 +43,34 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </Flex>
 
-      {/* Contenedor del contenido (texto y botones) */}
+      {/* 2. Contenedor principal de texto (Dividido en dos columnas) */}
       <Flex
         flex={8}
-        s={{ direction: "column" }}
+        s={{ direction: "row" }} // Alineamos Título y Datos de lado
         fillWidth
         paddingX="s"
-        gap="l"
+        gap="xl"
       >
+        {/* Columna A: El Título */}
         {title && (
-          <Flex>
+          <Flex flex={5}> 
             <Heading as="h2" wrap="balance" variant="heading-strong-xl">
               {title}
             </Heading>
           </Flex>
         )}
+
+        {/* Columna B: Descripción y Enlaces */}
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-          <Column gap="16">
+          <Column flex={7} gap="16">
             {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
+            
             {description?.trim() && (
               <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
                 {description}
               </Text>
             )}
+
             <Flex gap="24" wrap>
               {content?.trim() && (
                 <SmartLink
