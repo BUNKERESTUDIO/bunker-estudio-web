@@ -142,12 +142,26 @@ const about: About = {
   },
 };
 
-const blog: Blog = {
-  title: "Grabación de baterías en el Búnker",
-    description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
-    label: "Sesiones",
-    path: "grabacion-baterias",
-};
+export const blog = {
+    title: 'Últimas novedades del Búnker',
+    description: 'Historias desde el subsuelo.',
+    posts: [
+        {
+            title: "Grabación de baterías en el Búnker",
+            description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
+            label: "Sesiones",
+            path: "grabacion-baterias",
+            images: [] 
+        },
+        {
+            title: "Mezcla Analógica",
+            description: "El proceso detrás de nuestro sonido característico.",
+            label: "Procesos",
+            path: "mezcla-analogica",
+            images: []
+        }
+    ]
+}
 
 const work: Work = {
   path: "/work",
