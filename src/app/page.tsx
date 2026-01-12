@@ -115,7 +115,7 @@ export default function Home() {
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
-            <Line maxWidth={90} />
+            <Line maxWidth={150} />
           </Row>
           <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
             <Row flex={1} paddingLeft="l" paddingTop="24">
@@ -128,7 +128,7 @@ export default function Home() {
             </Row>
           </Row>
           <Row fillWidth paddingLeft="64" horizontal="end">
-            <Line maxWidth={90} />
+            <Line maxWidth={75} />
           </Row>
         </Column>
       )}
