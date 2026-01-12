@@ -30,33 +30,36 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   avatars,
   link,
 }) => {
-  return (
+ return (
     <Flex fillWidth gap="l" s={{ direction: "row", alignItems: "flex-start" }}>
+      {/* Contenedor de la miniatura */}
       <Flex flex={4} style={{ maxWidth: '200px' }}>
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 200px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
+        <Carousel
+          sizes="(max-width: 960px) 100vw, 200px"
+          items={images.map((image) => ({
+            slide: image,
+            alt: title,
+          }))}
+        />
+      </Flex>
+
+      {/* Contenedor del contenido (texto y botones) */}
       <Flex
+        flex={8}
         s={{ direction: "column" }}
         fillWidth
         paddingX="s"
-        paddingTop="12"
-        paddingBottom="24"
         gap="l"
       >
         {title && (
-          <Flex flex={5}>
+          <Flex>
             <Heading as="h2" wrap="balance" variant="heading-strong-xl">
               {title}
             </Heading>
           </Flex>
         )}
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-          <Column flex={7} gap="16">
+          <Column gap="16">
             {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
             {description?.trim() && (
               <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
@@ -86,6 +89,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </Column>
         )}
       </Flex>
-    </Column>
+    </Flex>
   );
 };
