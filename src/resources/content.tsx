@@ -141,30 +141,12 @@ const about: About = {
   },
 };
 
-const blog: any = {
+const blog: Blog = {
     title: 'Últimas novedades del Búnker',
     description: 'Historias desde el subsuelo.',
     path: '/blog',
-    label: 'Blog',
-    posts: [
-        {
-            title: "Grabación de baterías en el Búnker",
-            description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
-            label: "Sesiones",
-            path: "grabacion-batteries",
-            images: [],
-            date: "2024-05-15"
-        },
-        {
-            title: "Mezcla Analógica",
-            description: "El proceso detrás de nuestro sonido característico.",
-            label: "Procesos",
-            path: "mezcla-analogica",
-            images: [],
-            date: "2024-05-16"
-        }
-    ]
-}
+    label: 'Blog'
+};
 
 const work: Work = {
   path: "/work",
