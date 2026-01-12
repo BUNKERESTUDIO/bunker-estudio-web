@@ -146,7 +146,6 @@ const blog: Blog = {
   title: "Grabación de baterías en el Búnker",
     description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
     label: "Sesiones",
-    date: "2024-05-01",
 };
 
 const work: Work = {
