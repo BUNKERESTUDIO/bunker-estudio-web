@@ -146,6 +146,7 @@ const blog: Blog = {
   title: "Grabación de baterías en el Búnker",
     description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
     label: "Sesiones",
+    path: "grabacion-baterias",
 };
 
 const work: Work = {
