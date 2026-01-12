@@ -145,13 +145,14 @@ const about: About = {
 export const blog = {
     title: 'Últimas novedades del Búnker',
     description: 'Historias desde el subsuelo.',
+    path: '/blog', // AÑADE ESTA LÍNEA AQUÍ
     posts: [
         {
             title: "Grabación de baterías en el Búnker",
             description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
             label: "Sesiones",
             path: "grabacion-baterias",
-            images: [] 
+            images: []
         },
         {
             title: "Mezcla Analógica",
