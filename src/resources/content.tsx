@@ -48,7 +48,7 @@ const home: Home = {
   description: `Estudio de grabación y mezcla especializado en sonido con autoridad.`,
   headline: <>Del subsuelo a la alta fidelidad</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">BUNKER</strong>{" "}
