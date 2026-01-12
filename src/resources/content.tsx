@@ -8,7 +8,7 @@ const person: Person = {
   role: "Ingeniería de Sonido",
   avatar: "/images/avatar.jpg",
   email: "info.bunkerestudio@gmail.com",
-  location: "Europe/Madrid", // 
+  location: "Europe/Madrid",
   languages: ["Español", "Euskera"],
 };
 
@@ -19,17 +19,16 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Si el icono de youtube no sale, prueba cambiando "youtube" por "linkedin" temporalmente
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/yoursoundproductions/", // PON TU INSTA
+    link: "https://www.instagram.com/yoursoundproductions/",
     essential: true,
   },
   {
     name: "YouTube",
     icon: "youtube", 
-    link: "https://www.youtube.com/@BUNKER_ESTUDIO", // PON TU CANAL NUEVO
+    link: "https://www.youtube.com/@BUNKER_ESTUDIO",
     essential: true,
   },
   {
@@ -111,74 +110,4 @@ const about: About = {
       },
       {
         company: "Mezcla y Mastering",
-        timeframe: "Online / Presencial",
-        role: "Post-producción",
-        achievements: [
-          <>Definición, fase y pegada profesional para tus pistas.</>,
-          <>Tratamiento híbrido analógico/digital.</>,
-        ],
-        images: [],
-      },
-    ],
-  },
-  studies: {
-    display: true,
-    title: "Criterio Técnico",
-    institutions: [
-      {
-        name: "Eslabones de la cadena",
-        description: <>Trabajo exclusivo con previos Clase A y microfonía de referencia.</>,
-      },
-      {
-        name: "Actitud sobre el papel",
-        description: <>La técnica al servicio de la fuerza del audio.</>,
-      },
-    ],
-  },
-  technical: {
-    display: false,
-    title: "Skills",
-    skills: [],
-  },
-};
-
-export const blog = {
-    title: 'Últimas novedades del Búnker',
-    description: 'Historias desde el subsuelo.',
-    path: '/blog',
-    label: 'Blog',
-    posts: [
-        {
-            title: "Grabación de baterías en el Búnker",
-            description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
-            label: "Sesiones",
-            path: "grabacion-baterias",
-            images: []
-        },
-        {
-            title: "Mezcla Analógica",
-            description: "El proceso detrás de nuestro sonido característico.",
-            label: "Procesos",
-            path: "mezcla-analogica",
-            images: []
-        }
-    ]
-}
-
-const work: Work = {
-  path: "/work",
-  label: "Sessions",
-  title: `Portfolio – ${person.name}`,
-  description: `Trabajos realizados en el Búnker`,
-};
-
-const gallery: Gallery = {
-  path: "/gallery",
-  label: "Estudio",
-  title: `El equipo – ${person.name}`,
-  description: `Un vistazo al hardware del Búnker`,
-  images: [],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
-
+        timeframe
