@@ -104,13 +104,18 @@ export default function Home() {
         <img 
           src={home.image} 
           alt="Bunker Estudio" 
-          style={{ width: '100%', borderRadius: '16px', objectFit: 'cover', height: '400px' }} 
+          style={{ 
+            width: '100%', 
+            height: 'auto',        // Esto respeta la proporción 1920x1080
+            borderRadius: '16px', 
+            display: 'block'
+          }} 
         />
       </RevealFx>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
-            <Line maxWidth={48} />
+            <Line maxWidth={90} />
           </Row>
           <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
             <Row flex={1} paddingLeft="l" paddingTop="24">
@@ -123,7 +128,7 @@ export default function Home() {
             </Row>
           </Row>
           <Row fillWidth paddingLeft="64" horizontal="end">
-            <Line maxWidth={48} />
+            <Line maxWidth={90} />
           </Row>
         </Column>
       )}
