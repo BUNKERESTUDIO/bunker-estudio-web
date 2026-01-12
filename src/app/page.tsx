@@ -100,6 +100,13 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
+      <RevealFx translateY="16" delay={0.6} fillWidth>
+        <img 
+          src={home.image} 
+          alt="Bunker Estudio" 
+          style={{ width: '100%', borderRadius: '16px', objectFit: 'cover', height: '400px' }} 
+        />
+      </RevealFx>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
