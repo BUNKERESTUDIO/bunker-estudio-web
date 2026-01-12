@@ -114,7 +114,7 @@ export default function Home() {
       </RevealFx>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
-          <Row fillWidth paddingRight="64">
+          <Row fillWidth horizontal="center">
             <Line maxWidth={150} />
           </Row>
           <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
@@ -127,7 +127,7 @@ export default function Home() {
               <Posts range={[1, 2]} columns="2" />
             </Row>
           </Row>
-          <Row fillWidth paddingLeft="64" horizontal="end">
+          <Row fillWidth horizontal="center">
             <Line maxWidth={75} />
           </Row>
         </Column>
