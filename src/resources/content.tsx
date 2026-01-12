@@ -43,6 +43,11 @@ const social: Social = [
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
+  effects: {                          // AÑADE ESTO
+    gradient: true,                   // AÑADE ESTO
+    dots: false,                      // AÑADE ESTO
+    lines: false,                     // AÑADE ESTO
+  },                                  // AÑADE ESTO
   label: "Inicio",
   title: `${person.name} | Ingeniería de Sonido`,
   description: `Estudio de grabación y mezcla especializado en sonido con autoridad.`,
