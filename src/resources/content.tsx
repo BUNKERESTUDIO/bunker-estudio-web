@@ -143,10 +143,11 @@ const about: About = {
 };
 
 const blog: Blog = {
-  path: "/blog",
-  label: "Procesos",
-  title: "Dentro del Búnker",
-  description: `Análisis técnico y visión sonora por ${person.name}`,
+  title: "Grabación de baterías en el Búnker",
+    description: "Cómo conseguimos ese sonido crudo y con autoridad en nuestras sesiones.",
+    label: "Sesiones",
+    id: "post-01",
+    date: "2024-05-01",
 };
 
 const work: Work = {
