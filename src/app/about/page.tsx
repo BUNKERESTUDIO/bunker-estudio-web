@@ -226,11 +226,11 @@ export default function About() {
                       {experience.achievements.map(
   (achievement: any, index: number) => (
     <Text
-      as="li"
-      variant="body-default-m"
-      key={`${experience.company}-${index}`}
-      dangerouslySetInnerHTML={{ __html: achievement }}
-    />
+  as="li"
+  variant="body-default-m"
+  key={`${experience.company}-${index}`}
+  dangerouslySetInnerHTML={{ __html: achievement ?? '' }}
+/>
   ),
 )}
                     </Column>
@@ -275,7 +275,7 @@ export default function About() {
                     <Text 
   variant="heading-default-xs" 
   onBackground="neutral-weak"
-  dangerouslySetInnerHTML={{ __html: institution.description }}
+  dangerouslySetInnerHTML={{ __html: institution.description ?? '' }}
 />
                   </Column>
                 ))}
