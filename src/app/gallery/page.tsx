@@ -51,20 +51,19 @@ export default function Gallery() {
           }}
         />
       </Flex>
-
-      {/* Listado de Material Técnico Centrado 🛠️ */}
+{/* Listado de Material Técnico Centrado 🛠️ */}
       <Column fillWidth gap="32" paddingX="m" marginBottom="xl" align="center">
-        <Heading variant="display-strong-s" style={{ textAlign: 'center' }}>
+        <Heading variant="display-strong-s" align="center">
           El Arsenal del Búnker
         </Heading>
 
-        <Row gap="48" wrap fillWidth justifyContent="center">
+        <Row gap="48" wrap fillWidth horizontal="center">
           {/* Columna: Previos y Conversión */}
           <Column flex={1} minWidth={240} gap="12" align="center">
-            <Text variant="heading-strong-m" onBackground="neutral-medium" style={{ textAlign: 'center' }}>
+            <Text variant="heading-strong-m" onBackground="neutral-medium" align="center">
               Previos y Conversión 🎛️
             </Text>
-            <Text variant="body-default-m" style={{ whiteSpace: 'pre-line', textAlign: 'center' }}>
+            <Text variant="body-default-m" align="center" style={{ whiteSpace: 'pre-line' }}>
               • Audient iD44{"\n"}
               • Clarett+ Octopre{"\n"}
               • Sound Skulptor MP573
@@ -73,10 +72,10 @@ export default function Gallery() {
 
           {/* Columna: Microfonos */}
           <Column flex={1} minWidth={240} gap="12" align="center">
-            <Text variant="heading-strong-m" onBackground="neutral-medium" style={{ textAlign: 'center' }}>
+            <Text variant="heading-strong-m" onBackground="neutral-medium" align="center">
               Microfonos 🎙️
             </Text>
-            <Text variant="body-default-m" style={{ whiteSpace: 'pre-line', textAlign: 'center' }}>
+            <Text variant="body-default-m" align="center" style={{ whiteSpace: 'pre-line' }}>
               • Neumann U87{"\n"}
               • sE Electronics V7X{"\n"}
               • Lewitt LCT 240 (Par){"\n"}
@@ -89,15 +88,12 @@ export default function Gallery() {
 
           {/* Columna: Bateria */}
           <Column flex={1} minWidth={240} gap="12" align="center">
-            <Text variant="heading-strong-m" onBackground="neutral-medium" style={{ textAlign: 'center' }}>
+            <Text variant="heading-strong-m" onBackground="neutral-medium" align="center">
               Bateria 🥁
             </Text>
-            <Text variant="body-default-m" style={{ textAlign: 'center' }}>
+            <Text variant="body-default-m" align="center">
               • Sonor Select Force
             </Text>
           </Column>
         </Row>
       </Column>
-    </Flex>
-  );
-}
