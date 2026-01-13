@@ -115,4 +115,24 @@ export default function Home() {
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth horizontal="center">
-            <Line maxWidth={15
+            <Line maxWidth={150} />
+          </Row>
+          <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
+            <Row flex={1} horizontal="center" paddingTop="24">
+              <Heading as="h2" variant="display-strong-xs" wrap="balance">
+                Últimas novedades del Búnker
+              </Heading>
+            </Row>
+            <Row flex={3} paddingX="20">
+              <Posts range={[1, 2]} columns="2" />
+            </Row>
+          </Row>
+          <Row fillWidth horizontal="center">
+            <Line maxWidth={75} />
+          </Row>
+        </Column>
+      )}
+      <Mailchimp />
+    </Column>
+  );
+}
