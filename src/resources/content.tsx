@@ -86,10 +86,10 @@ const about: About = {
     display: true,
     title: "Filosofía",
     description: (
-      <div style={{ fontWeight: 'normal', color: 'var(--neutral-on-background-medium)', lineHeight: '1.6' }}>
-        Sé lo que es la rabia de grabar un disco y que <span className="text-brand-medium" style={{ display: 'contents' }}>suene a plástico</span>. En el Búnker, no hacemos grabaciones estándar; forjamos <span className="text-brand-medium" style={{ display: 'contents' }}>sonido con autoridad</span>. Utilizamos herramientas de élite como el <span className="text-brand-medium" style={{ display: 'contents' }}>Neumann U87</span> y previos <span className="text-brand-medium" style={{ display: 'contents' }}>Clase A (Soundskulptor MP573)</span> para que tu potencia se traduzca en una pared de sonido sólida y real.
-      </div>
-    ),
+  <>
+    Sé lo que es la rabia de grabar un disco y que suene a plástico. En el Búnker, no hacemos grabaciones estándar; forjamos sonido con autoridad. Utilizamos herramientas de élite como el Neumann U87 y previos Clase A (Soundskulptor MP573) para que tu potencia se traduzca en una pared de sonido sólida y real.
+  </>
+),
   },
   work: {
     display: true,
