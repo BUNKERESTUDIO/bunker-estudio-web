@@ -87,8 +87,10 @@ const about: About = {
     title: "Filosofía",
     description: (
       <>
-        Sé lo que es la rabia de grabar un disco y que suene a plástico. 
-        En el Búnker, utilizamos herramientas de élite como el <span className="text-brand-medium">Neumann U87</span> y previos <span className="text-brand-medium">Clase A</span> para que tu potencia se traduzca en un sonido sólido.
+        Sé lo que es la rabia de grabar un disco y que <span className="text-brand-medium">suene a plástico</span>. 
+        En el Búnker, no hacemos grabaciones estándar; forjamos <span className="text-brand-medium">sonido con autoridad</span>. 
+        <br /><br />
+        Utilizamos herramientas de élite como el <span className="text-brand-medium">Neumann U87</span> y previos <span className="text-brand-medium">Clase A (Soundskulptor MP573)</span> para que tu potencia se traduzca en una pared de sonido sólida y real.
       </>
     ),
   },
@@ -101,8 +103,8 @@ const about: About = {
         timeframe: "Presencial",
         role: "Ingeniería crítica",
         achievements: [
-          <>Uso de cadena de señal de alta gama (Neumann, Soundskulptor Clase A).</>,
-          <>Enfoque en capturar la actitud real del artista.</>,
+          <>Cadena de señal de alta gama: <span className="text-brand-medium">Pureza Clase A</span>.</>,
+          <>Captura de la <span className="text-brand-medium">actitud real</span>. Si no transmite, no sirve.</>,
         ],
         images: [],
       },
@@ -111,8 +113,8 @@ const about: About = {
         timeframe: "Online / Presencial",
         role: "Post-producción",
         achievements: [
-          <>Definición, fase y pegada profesional para tus pistas.</>,
-          <>Tratamiento híbrido analógico/digital.</>,
+          <>Definición, fase y una <span className="text-brand-medium">pegada demoledora</span>.</>,
+          <>Tratamiento híbrido para un color analógico con precisión digital.</>,
         ],
         images: [],
       },
@@ -124,18 +126,13 @@ const about: About = {
     institutions: [
       {
         name: "Eslabones de la cadena",
-        description: <>Trabajo exclusivo con previos Clase A, A/B y microfonía de referencia.</>,
+        description: <>No hay compromiso: previos Clase A y conversión <span className="text-brand-medium">Audient</span>.</>,
       },
       {
-        name: "Actitud sobre el papel",
-        description: <>La técnica al servicio de la fuerza del audio.</>,
+        name: "La visión del productor",
+        description: <>La técnica es solo el medio para que tu música <span className="text-brand-medium">golpee con fuerza</span>.</>,
       },
     ],
-  },
-  technical: {
-    display: false,
-    title: "Skills",
-    skills: [],
   },
 };
 
