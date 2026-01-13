@@ -100,8 +100,8 @@ const about: About = {
         timeframe: "Presencial",
         role: "Ingeniería crítica",
         achievements: [
-          'Cadena de señal de alta gama: <span class="text-brand-medium">Pureza Clase A</span>.'
-          <>Captura de la <span className="text-brand-medium">actitud real</span>. Si no transmite, no sirve.</>,
+          'Cadena de señal de alta gama: <span class="text-brand-medium">Pureza Clase A</span>.',
+          'Captura de la <span class="text-brand-medium">actitud real</span>. Si no transmite, no sirve.',
         ],
         images: [],
       },
@@ -110,8 +110,8 @@ const about: About = {
         timeframe: "Online / Presencial",
         role: "Post-producción",
         achievements: [
-          <>Definición, fase y una <span className="text-brand-medium">pegada demoledora</span>.</>,
-          <>Tratamiento híbrido para un color analógico con precisión digital.</>,
+          'Definición, fase y una <span class="text-brand-medium">pegada demoledora</span>.',
+          'Tratamiento híbrido para un color analógico con <span class="text-brand-medium">precisión digital</span>.',
         ],
         images: [],
       },
@@ -123,11 +123,11 @@ const about: About = {
     institutions: [
       {
         name: "Eslabones de la cadena",
-        description: <>No hay compromiso: previos Clase A y conversión <span className="text-brand-medium">Audient</span>.</>,
+        description: `No hay compromiso: previos Clase A y conversión <span class="text-brand-medium">Audient</span>.`,
       },
       {
         name: "La visión del productor",
-        description: <>La técnica es solo el medio para que tu música <span className="text-brand-medium">golpee con fuerza</span>.</>,
+        description: `La técnica es solo el medio para que tu música <span class="text-brand-medium">golpee con fuerza</span>.`,
       },
     ],
   },
