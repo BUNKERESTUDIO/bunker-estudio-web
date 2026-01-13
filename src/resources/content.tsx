@@ -123,11 +123,11 @@ const about: About = {
     institutions: [
       {
         name: "Eslabones de la cadena",
-        description: `No hay excusa: previos Clase A y conversión <span style="color: var(--brand-on-background-medium);">Audient</span>.',
+        description: 'No hay excusa: previos Clase A y conversión <span style="color: var(--brand-on-background-medium);">Audient</span>.',
       },
       {
         name: "La visión del productor",
-        description: `La técnica es solo el medio para que tu música <span style="color: var(--brand-on-background-medium);">golpee con fuerza</span>.',
+        description: 'La técnica es solo el medio para que tu música <span style="color: var(--brand-on-background-medium);">golpee con fuerza</span>.',
       },
     ],
   },
