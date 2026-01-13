@@ -6,7 +6,7 @@ export async function generateMetadata() {
     title: "Estudio - Bunker Estudio",
     description: "Equipamiento técnico y visual del Bunker Estudio.",
     baseURL: baseURL,
-    image: `/images/og/home.jpg`,
+    image: `images/og/home.jpg`,
     path: gallery.path,
   });
 }
@@ -20,7 +20,7 @@ export default function Gallery() {
         title="Estudio"
         description="Equipamiento técnico y visual del Bunker Estudio."
         path={gallery.path}
-        image={`/api/og/generate?title=${encodeURIComponent("Estudio")}`}
+        image={`images/og/home.jpg`}
         author={{
           name: person.name,
           url: `${baseURL}${gallery.path}`,
