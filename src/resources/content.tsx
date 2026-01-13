@@ -86,9 +86,9 @@ const about: About = {
     display: true,
     title: "Filosofía",
     description: (
-  <>
-    Sé lo que es la rabia de grabar un disco y que suene a plástico. En el Búnker, no hacemos grabaciones estándar; forjamos sonido con autoridad. Utilizamos herramientas de élite como el Neumann U87 y previos Clase A (Soundskulptor MP573) para que tu potencia se traduzca en una pared de sonido sólida y real.
-  </>
+  <span style={{ all: 'unset', display: 'inline' }}>
+    Sé lo que es la rabia de grabar un disco y que <span style={{ color: 'var(--brand-medium)', fontWeight: 'inherit' }}>suene a plástico</span>. En el Búnker, no hacemos grabaciones estándar; forjamos <span style={{ color: 'var(--brand-medium)', fontWeight: 'inherit' }}>sonido con autoridad</span>. Utilizamos herramientas de élite como el <span style={{ color: 'var(--brand-medium)', fontWeight: 'inherit' }}>Neumann U87</span> y previos <span style={{ color: 'var(--brand-medium)', fontWeight: 'inherit' }}>Clase A (Soundskulptor MP573)</span> para que tu potencia se traduzca en una pared de sonido sólida y real.
+  </span>
 ),
   },
   work: {
