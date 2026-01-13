@@ -197,15 +197,9 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-  <Column 
-    textVariant="body-default-l" 
-    fillWidth 
-    gap="m" 
-    marginBottom="xl"
-    style={{ display: 'contents' }} // Esto hace que el contenedor no fuerce saltos
-  >
+  <div className={styles.textAlign} style={{ fontSize: 'var(--body-font-size-l)', lineHeight: '1.5', marginBottom: 'var(--static-space-xl)' }}>
     {about.intro.description}
-  </Column>
+  </div>
 )}
 
           {about.work.display && (
