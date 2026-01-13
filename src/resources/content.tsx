@@ -134,6 +134,11 @@ const about: About = {
       },
     ],
   },
+  technical: {
+    display: false, // Lo mantenemos oculto si no quieres mostrar skills específicas aún
+    title: "Skills",
+    skills: [],
+  },
 };
 
 const blog: Blog = {
