@@ -110,8 +110,8 @@ const about: About = {
         timeframe: "Online / Presencial",
         role: "Post-producción",
         achievements: [
-          'Definición, fase y una <span class="text-brand-medium">pegada demoledora</span>.',
-          'Tratamiento híbrido para un color analógico con <span class="text-brand-medium">precisión digital</span>.',
+          'Definición, fase y una <span style="color: var(--brand-on-background-medium);">pegada demoledora</span>.',
+          'Tratamiento híbrido para un color analógico con <span style="color: var(--brand-on-background-medium);">precision digital</span>.',
         ],
         images: [],
       },
@@ -123,11 +123,11 @@ const about: About = {
     institutions: [
       {
         name: "Eslabones de la cadena",
-        description: `No hay compromiso: previos Clase A y conversión <span class="text-brand-medium">Audient</span>.`,
+        description: `No hay excusa: previos Clase A y conversión <span style="color: var(--brand-on-background-medium);">Audient</span>.',
       },
       {
         name: "La visión del productor",
-        description: `La técnica es solo el medio para que tu música <span class="text-brand-medium">golpee con fuerza</span>.`,
+        description: `La técnica es solo el medio para que tu música <span style="color: var(--brand-on-background-medium);">golpee con fuerza</span>.',
       },
     ],
   },
