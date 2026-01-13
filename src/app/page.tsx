@@ -35,7 +35,7 @@ export default function Home() {
         path={home.path}
         title={home.title}
         description={home.description}
-        image= home.image,
+        image={home.image}
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
@@ -106,7 +106,7 @@ export default function Home() {
           alt="Bunker Estudio" 
           style={{ 
             width: '100%', 
-            height: 'auto',        // Esto respeta la proporción 1920x1080
+            height: 'auto',
             borderRadius: '16px', 
             display: 'block'
           }} 
@@ -115,24 +115,4 @@ export default function Home() {
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth horizontal="center">
-            <Line maxWidth={150} />
-          </Row>
-          <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
-            <Row flex={1} horizontal="center" paddingTop="24">
-              <Heading as="h2" variant="display-strong-xs" wrap="balance">
-                Últimas novedades del Búnker
-              </Heading>
-            </Row>
-            <Row flex={3} paddingX="20">
-              <Posts range={[1, 2]} columns="2" />
-            </Row>
-          </Row>
-          <Row fillWidth horizontal="center">
-            <Line maxWidth={75} />
-          </Row>
-        </Column>
-      )}
-      <Mailchimp />
-    </Column>
-  );
-}
+            <Line maxWidth={15
