@@ -35,7 +35,7 @@ export default function Home() {
         path={home.path}
         title={home.title}
         description={home.description}
-        image={`images/og/home.jpg`}
+        image= home.image,
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
