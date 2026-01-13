@@ -51,7 +51,8 @@ export default function Gallery() {
           }}
         />
       </Flex>
-{/* Listado de Material Técnico Centrado 🛠️ */}
+
+      {/* Listado de Material Técnico Centrado 🛠️ */}
       <Column fillWidth gap="32" paddingX="m" marginBottom="xl" align="center">
         <Heading variant="display-strong-s" align="center">
           El Arsenal del Búnker
@@ -97,3 +98,6 @@ export default function Gallery() {
           </Column>
         </Row>
       </Column>
+    </Flex>
+  );
+}
