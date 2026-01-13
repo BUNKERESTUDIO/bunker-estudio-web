@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "BUNKER",
   lastName: "ESTUDIO",
   name: "BUNKER ESTUDIO",
-  role: "Ingeniería de Sonido",
+  role: "Producción, Mezcla & Mastering", // Refleja mejor lo que haces con el U87 y MP573
   avatar: "/images/avatar.jpg",
   email: "info.bunkerestudio@gmail.com",
   location: "Europe/Madrid",
@@ -45,9 +45,9 @@ const home: Home = {
   label: "Inicio",
   title: `${person.name} | Ingeniería de Sonido`,
   description: `Estudio de grabación y mezcla especializado en sonido con autoridad.`,
-  headline: <>Del subsuelo a la alta fidelidad</>,
+  headline: <>Del subsuelo a la <span className="text-brand-medium">alta fidelidad</span></>,
   featured: {
-    display: false,
+    display: true, // AHORA SÍ aparecerá el banner de "Sonido con autoridad"
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">BUNKER</strong>{" "}
@@ -89,8 +89,7 @@ const about: About = {
     description: (
       <>
         Sé lo que es la rabia de grabar un disco y que suene a plástico. 
-        En el Búnker, utilizamos herramientas de élite para que la potencia 
-        que traes se traduzca en un sonido sólido y con una pegada innegociable.
+        En el Búnker, utilizamos herramientas de élite como el <span className="text-brand-medium">Neumann U87</span> y previos <span className="text-brand-medium">Clase A</span> para que tu potencia se traduzca en un sonido sólido.
       </>
     ),
   },
