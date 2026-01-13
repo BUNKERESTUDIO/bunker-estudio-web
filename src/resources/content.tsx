@@ -100,8 +100,8 @@ const about: About = {
         timeframe: "Presencial",
         role: "Ingeniería crítica",
         achievements: [
-          'Cadena de señal de alta gama: <span class="text-brand-medium">Pureza Clase A</span>.',
-          'Captura de la <span class="text-brand-medium">actitud real</span>. Si no transmite, no sirve.',
+          'Cadena de señal de alta gama: <span style="color: #3b82f6;">Pureza Clase A</span>.',
+          'Captura de la <span style="color: #3b82f6;">actitud real</span>. Si no transmite, no sirve.',
         ],
         images: [],
       },
