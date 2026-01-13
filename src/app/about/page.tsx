@@ -197,10 +197,11 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-  <div className={styles.textAlign} style={{ fontSize: 'var(--body-font-size-l)', lineHeight: '1.5', marginBottom: 'var(--static-space-xl)' }}>
-    {about.intro.description}
-  </div>
-)}
+  <Column fillWidth marginBottom="xl">
+    <Text variant="body-default-l" onBackground="neutral-strong">
+      {about.intro.description}
+    </Text>
+  </Column>
 
           {about.work.display && (
             <>
