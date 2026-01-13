@@ -197,10 +197,16 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
-              {about.intro.description}
-            </Column>
-          )}
+  <Column 
+    textVariant="body-default-l" 
+    fillWidth 
+    gap="m" 
+    marginBottom="xl"
+    style={{ display: 'contents' }} // Esto hace que el contenedor no fuerce saltos
+  >
+    {about.intro.description}
+  </Column>
+)}
 
           {about.work.display && (
             <>
