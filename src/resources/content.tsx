@@ -126,7 +126,7 @@ const about: About = {
     institutions: [
       {
         name: "Eslabones de la cadena",
-        description: <>Trabajo exclusivo con previos Clase A y microfonía de referencia.</>,
+        description: <>Trabajo exclusivo con previos Clase A, A/B y microfonía de referencia.</>,
       },
       {
         name: "Actitud sobre el papel",
@@ -150,8 +150,8 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Sessions",
-  title: `Portfolio – ${person.name}`,
+  label: "Trabajos",
+  title: `Trabajos – ${person.name}`,
   description: `Trabajos realizados en el Búnker`,
 };
 
