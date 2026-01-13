@@ -86,9 +86,9 @@ const about: About = {
     display: true,
     title: "Filosofía",
     description: (
-      <span className="text-neutral-medium" style={{ display: 'inline-block', lineHeight: '1.6' }}>
-        Sé lo que es la rabia de grabar un disco y que <span className="text-brand-medium">suene a plástico</span>. En el Búnker, no hacemos grabaciones estándar; forjamos <span className="text-brand-medium">sonido con autoridad</span>. Utilizamos herramientas de élite como el <span className="text-brand-medium">Neumann U87</span> y previos <span className="text-brand-medium">Clase A (Soundskulptor MP573)</span> para que tu potencia se traduzca en una pared de sonido sólida y real.
-      </span>
+      <div style={{ fontWeight: 'normal', color: 'var(--neutral-on-background-medium)', lineHeight: '1.6' }}>
+        Sé lo que es la rabia de grabar un disco y que <span className="text-brand-medium" style={{ display: 'contents' }}>suene a plástico</span>. En el Búnker, no hacemos grabaciones estándar; forjamos <span className="text-brand-medium" style={{ display: 'contents' }}>sonido con autoridad</span>. Utilizamos herramientas de élite como el <span className="text-brand-medium" style={{ display: 'contents' }}>Neumann U87</span> y previos <span className="text-brand-medium" style={{ display: 'contents' }}>Clase A (Soundskulptor MP573)</span> para que tu potencia se traduzca en una pared de sonido sólida y real.
+      </div>
     ),
   },
   work: {
