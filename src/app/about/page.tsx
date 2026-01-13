@@ -224,16 +224,15 @@ export default function About() {
                     </Text>
                     <Column as="ul" gap="16">
                       {experience.achievements.map(
-                        (achievement: React.ReactNode, index: number) => (
-                          <Text
-                            as="li"
-                            variant="body-default-m"
-                            key={`${experience.company}-${index}`}
-                          >
-                            {achievement}
-                          </Text>
-                        ),
-                      )}
+  (achievement: any, index: number) => (
+    <Text
+      as="li"
+      variant="body-default-m"
+      key={`${experience.company}-${index}`}
+      dangerouslySetInnerHTML={{ __html: achievement }}
+    />
+  ),
+)}
                     </Column>
                     {experience.images && experience.images.length > 0 && (
                       <Row fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
@@ -273,9 +272,11 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.description}
-                    </Text>
+                    <Text 
+  variant="heading-default-xs" 
+  onBackground="neutral-weak"
+  dangerouslySetInnerHTML={{ __html: institution.description }}
+/>
                   </Column>
                 ))}
               </Column>
