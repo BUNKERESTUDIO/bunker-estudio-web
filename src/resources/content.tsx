@@ -43,17 +43,17 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Inicio",
-  title: `${person.name} | Ingeniería de Sonido`,
-  description: `Estudio de grabación y mezcla especializado en sonido con autoridad.`,
-  headline: <>Del subsuelo a la <span className="text-brand-medium">alta fidelidad</span></>,
+  title: `${person.name} | Producción y Mezcla de Alto Voltaje`,
+  description: `Ingeniería de sonido para bandas que no se conforman con lo estándar. Neumann U87, Previos Clase A y pegada absoluta.`,
+  headline: <>Sonido con <span className="text-brand-medium">Autoridad</span></>,
   featured: {
-    display: true, // AHORA SÍ aparecerá el banner de "Sonido con autoridad"
+    display: true,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">BUNKER</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Sonido con autoridad
+          PRODUCCIÓN & MEZCLA CRUDA
         </Text>
       </Row>
     ),
@@ -61,12 +61,11 @@ const home: Home = {
   },
   subline: (
     <>
-      Bunker Estudio nace para dar respuesta a sonidos que otros no saben tratar. 
-      <br /> Perfección técnica sin perder la esencia cruda.
+      Bunker Estudio es la respuesta al audio que suena "a plástico". 
+      <br /> Transformamos tu rabia en <span className="text-brand-medium">alta fidelidad</span> desde el subsuelo.
     </>
   ),
 };
-
 const about: About = {
   path: "/about",
   label: "El Búnker",
