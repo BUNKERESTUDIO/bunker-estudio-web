@@ -202,7 +202,7 @@ export default function About() {
       {about.intro.description}
     </Text>
   </Column>
-
+)}
           {about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
