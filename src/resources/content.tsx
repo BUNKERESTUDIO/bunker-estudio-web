@@ -9,8 +9,7 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "info.bunkerestudio@gmail.com",
   location: "Europe/Madrid",
-  address: "BEASAIN, GIPUZKOA",
-  languages: ["Español", "Euskera"], 
+  languages: ["BEASAIN, GIPUZKOA", "Español", "Euskera"], 
 };
 
 const newsletter: Newsletter = {
