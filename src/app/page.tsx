@@ -13,7 +13,6 @@ import {
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
-import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
 
 export async function generateMetadata() {
@@ -22,7 +21,7 @@ export async function generateMetadata() {
     description: home.description,
     baseURL: baseURL,
     path: home.path,
-    image: home.image,
+    image: home.image, // Asegúrate que en content.tsx tenga la / inicial
   });
 }
 
