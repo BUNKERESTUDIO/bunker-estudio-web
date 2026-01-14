@@ -31,9 +31,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
 }) => {
   return (
-    <Flex fillWidth gap="l" s={{ direction: "row", alignItems: "flex-start" }}>
-      {/* 1. Columna de la miniatura (Ancho fijo máximo) */}
-      <Flex flex={4} style={{ maxWidth: '200px', minWidth: '150px' }}>
+    <Flex 
+      fillWidth 
+      gap="l" 
+      direction="row" 
+      mobileDirection="column" // Esto pone la foto arriba en el móvil
+    >
+      {/* 1. Miniatura: Ahora se adapta al ancho en móvil */}
+      <Flex 
+        flex={4} 
+        style={{ width: '100%' }} 
+        s={{ maxWidth: '200px' }}
+      >
         <Carousel
           style={{ objectFit: 'contain' }}
           sizes="(max-width: 960px) 100vw, 200px"
@@ -44,15 +53,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </Flex>
 
-      {/* 2. Contenedor principal de texto (Dividido en dos columnas) */}
+      {/* 2. Contenedor de texto: Se vuelve columna en el móvil */}
       <Flex
         flex={8}
-        s={{ direction: "row" }} // Alineamos Título y Datos de lado
+        direction="row"
+        mobileDirection="column"
         fillWidth
         paddingX="s"
-        gap="xl"
+        gap="m"
       >
-        {/* Columna A: El Título */}
+        {/* Título */}
         {title && (
           <Flex flex={5}> 
             <Heading as="h2" wrap="balance" variant="heading-strong-xl">
@@ -61,7 +71,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </Flex>
         )}
 
-        {/* Columna B: Descripción y Enlaces */}
+        {/* Descripción y Enlaces */}
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
           <Column flex={7} gap="16">
             {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
@@ -80,15 +90,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   href={href}
                 >
                   <Text variant="body-default-s">Ver trabajo</Text>
-                </SmartLink>
-              )}
-              {link && (
-                <SmartLink
-                  suffixIcon="arrowUpRightFromSquare"
-                  style={{ margin: "0", width: "fit-content" }}
-                  href={link}
-                >
-                  <Text variant="body-default-s">View project</Text>
                 </SmartLink>
               )}
             </Flex>
