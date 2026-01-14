@@ -7,7 +7,7 @@ export async function generateMetadata() {
     title: work.title,
     description: work.description,
     baseURL: baseURL,
-    image: home.image, // Usamos tu imagen real /images/og/home.jpg
+    image: "https://bunker-estudio-web.vercel.app/images/og/home.jpg",
     path: work.path,
   });
 }
