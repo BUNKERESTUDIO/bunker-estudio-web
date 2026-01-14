@@ -98,15 +98,28 @@ export default function About() {
               <Icon onBackground="accent-weak" name="globe" />
               {person.location}
             </Row>
-            {person.languages && person.languages.length > 0 && (
-              <Row wrap gap="8">
-                {person.languages.map((language, index) => (
-                  <Tag key={index} size="l">
+           {person.languages && person.languages.length > 0 && (
+    <Row wrap gap="8">
+        {person.languages.map((language, index) => (
+            language === "BEASAIN, GIPUZKOA" ? (
+                <a 
+                    key={index}
+                    href="https://maps.app.goo.gl/TirzY7Y3Y1rD9QhT6" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <Tag size="l">
+                        {language}
+                    </Tag>
+                </a>
+            ) : (
+                <Tag key={index} size="l">
                     {language}
-                  </Tag>
-                ))}
-              </Row>
-            )}
+                </Tag>
+            )
+        ))}
+    </Row>
+)}
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
