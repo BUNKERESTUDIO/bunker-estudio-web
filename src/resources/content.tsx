@@ -76,10 +76,6 @@ const about: About = {
     display: true,
     subItems: false,
   },
-  location: {
-        label: "BEASAIN, GIPUZKOA",
-        link: "https://maps.app.goo.gl/TirzY7Y3Y1rD9QhT6" // Enlace directo a Antzizar Kiroldegia
-    },
   avatar: {
     display: true,
   },
