@@ -9,8 +9,7 @@ const person: Person = {
   avatar: "images/avatar.jpg",
   email: "info.bunkerestudio@gmail.com",
   location: "Europe/Madrid",
-  languages: ["Español", "Euskera"],
-  address: "BEASAIN, GIPUZKOA", 
+  languages: ["Español", "Euskera"], 
   university: "688861075",
 };
 
@@ -80,7 +79,7 @@ const about: About = {
   location: {
         label: "BEASAIN, GIPUZKOA",
         link: "https://maps.app.goo.gl/TirzY7Y3Y1rD9QhT6" // Enlace directo a Antzizar Kiroldegia
-    }
+    },
   avatar: {
     display: true,
   },
