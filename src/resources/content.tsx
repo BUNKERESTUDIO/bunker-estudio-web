@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "BUNKER",
   lastName: "ESTUDIO",
   name: "BUNKER ESTUDIO",
-  role: "Producción, Mezcla & Mastering | 688861075", // Refleja mejor lo que haces con el U87 y MP573
+  role: "Producción, Mezcla & Mastering", // Refleja mejor lo que haces con el U87 y MP573
   avatar: "/images/avatar.jpg",
   email: "info.bunkerestudio@gmail.com",
   location: "Europe/Madrid",
