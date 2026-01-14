@@ -6,7 +6,7 @@ export async function generateMetadata() {
     title: "Estudio - Bunker Estudio",
     description: "Equipamiento técnico y visual del Bunker Estudio.",
     baseURL: baseURL,
-    image: `images/og/home.jpg`,
+    image: "https://bunker-estudio-web.vercel.app/images/og/home.jpg",
     path: gallery.path,
   });
 }
