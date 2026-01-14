@@ -22,7 +22,7 @@ export async function generateMetadata() {
     title: about.title,
     description: about.description,
     baseURL: baseURL,
-    image: `/images/og/home.jpg`,
+    image: "https://bunker-estudio-web.vercel.app/images/og/home.jpg",
     path: about.path,
   });
 }
