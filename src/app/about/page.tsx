@@ -104,7 +104,7 @@ export default function About() {
             language === "BEASAIN, GIPUZKOA" ? (
                 <a 
                     key={index}
-                    href="google.com/maps/@43.0453539,-2.2138868,3a,41.9y,44.68h,81.2t/data=!3m7!1e1!3m5!1s9GgURvsDDeGW0CjlzKdfcw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D8.797578175673422%26panoid%3D9GgURvsDDeGW0CjlzKdfcw%26yaw%3D44.6781278155371!7i16384!8i8192?authuser=0&entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D" 
+                    href="https://maps.app.goo.gl/jKqNkk2rYoZTrkS68" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
