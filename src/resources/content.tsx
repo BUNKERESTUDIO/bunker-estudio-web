@@ -10,7 +10,6 @@ const person: Person = {
   email: "info.bunkerestudio@gmail.com",
   location: "Europe/Madrid",
   languages: ["Español", "Euskera"], 
-  university: "688861075",
 };
 
 const newsletter: Newsletter = {
