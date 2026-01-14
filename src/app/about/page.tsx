@@ -120,6 +120,14 @@ export default function About() {
         ))}
     </Row>
 )}
+            <div className="mt-4">
+                <a 
+                    href="tel:688861075" 
+                    className="text-xs tracking-widest opacity-50 hover:opacity-100 hover:text-white transition-all"
+                >
+                    TEL: 688 861 075
+                </a>
+            </div>
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
