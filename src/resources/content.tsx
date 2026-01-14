@@ -10,6 +10,8 @@ const person: Person = {
   email: "info.bunkerestudio@gmail.com",
   location: "Europe/Madrid",
   languages: ["Español", "Euskera"],
+  address: "BEASAIN, GIPUZKOA", 
+  university: "688861075",
 };
 
 const newsletter: Newsletter = {
@@ -75,6 +77,10 @@ const about: About = {
     display: true,
     subItems: false,
   },
+  location: {
+        label: "BEASAIN, GIPUZKOA",
+        link: "https://maps.app.goo.gl/TirzY7Y3Y1rD9QhT6" // Enlace directo a Antzizar Kiroldegia
+    }
   avatar: {
     display: true,
   },
