@@ -41,7 +41,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: `${baseURL}/images/og/home.jpg`,
   label: "Inicio",
   title: `${person.name} | Producción y Mezcla de Alto Voltaje`,
   description: `Ingeniería de sonido para bandas que no se conforman con lo estándar. Neumann U87, Previos Clase A y pegada absoluta.`,
